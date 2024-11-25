@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <style>
         body {
-            background-image:url(https://media.istockphoto.com/id/1363887179/fr/vectoriel/arri%C3%A8re-plan-de-motif-de-ligne-abstrait.jpg?s=612x612&w=0&k=20&c=nw3PI-L_qfkLHonLoTU0a06k0dVjf42D0PD1mPIJdXs=) ;
+            background-image: url(https://media.istockphoto.com/id/1363887179/fr/vectoriel/arri%C3%A8re-plan-de-motif-de-ligne-abstrait.jpg?s=612x612&w=0&k=20&c=nw3PI-L_qfkLHonLoTU0a06k0dVjf42D0PD1mPIJdXs=);
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
@@ -35,9 +35,15 @@
             font-size: 1.2em;
             margin-top: 10px;
         }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Permet au contenu de passer à la ligne si nécessaire */
+            margin: 20px;
+        }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 300px;
+            margin: 10px;
             padding: 20px;
             background-color: white;
             border-radius: 10px;
@@ -70,10 +76,10 @@
         /* Styles pour le bouton Mission 4 */
         .button-green {
             background-color: green; /* Fond vert */
-            border: 2px solid #005600; /* Bordure verte foncée */
+            border: 2px solid #005600; 
         }
         .button-green:hover {
-            background-color: #005600; /* Vert foncé au survol */
+            background-color: #005600; 
         }
         footer {
             text-align: center;
@@ -88,27 +94,41 @@
         <h1>Portfolio</h1>
         <div class="description">Boubaker Abdelrahmane</div>
     </header>
-    
-    <div class="container" id="projets">
-        <h2>Mes Projets</h2>
-        <ul>
-            <li><a class="button" href="mission1/mission1.html">Mission 1</a></li>
-            <li><a class="button" href="mission3/index.html">Certifications</a></li>
-            <li><a class="button button-green" href="mission4/mission4.html">Mission 4</a></li> <!-- Bouton vert -->
-            <li><a class="button" href="TP2/index.html">TP 2</a></li>
-            <li><a class="button" href="TP3/index.html">TP 3</a></li>
-            <li><a class="button" href="TP5/index.html">TP5</a></li>
-            <li><a class="button" href="TP4/acceuil.html"> TP4</a></li>
-            <li><a class="button" href="mission5/cv.html"> mission5</a></li>
-        </ul>
+
+    <div class="content">
+        <div class="container" id="missions">
+            <h2>Mes Missions</h2>
+            <ul>
+                <li><a class="button" href="mission1/mission1.html">Mission 1</a></li>
+                <li><a class="button" href="mission3/index.html">Mission 3</a></li>
+                <li><a class="button" href="mission4/mission4.html">Mission 4</a></li>
+                <li><a class="button" href="mission5/cv.html">Mission 5</a></li>
+            </ul>
+        </div>
+
+        <div class="container" id="tp">
+            <h2>Mes TP</h2>
+            <ul>
+                <li><a class="button" href="TP1/presentation.html">TP 1</a></li>
+                <li><a class="button" href="TP2/index.html">TP 2</a></li>
+                <li><a class="button" href="TP3/index.html">TP 3</a></li>
+                <li><a class="button" href="TP4/acceuil.html">TP 4</a></li>
+                <li><a class="button" href="TP5/index.html">TP 5</a></li>
+                <li><a class="button" href="TP6/identification.html">TP 6</a></li>
+                <li><a class="button" href="TP7/facture.html">TP 7</a></li>
+            </ul>
+        </div>
+
+        <div class="container" id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li><a class="button" href="mission3/index.html">Certifications</a></li>
+            </ul>
+        </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
+
     <footer>
         <p>&copy; 2024 Boubaker Abdelrahmane</p>
     </footer>
 </body>
 </html>
- 
