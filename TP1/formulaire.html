@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <style>
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #A50044;
+            margin-bottom: 20px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        label {
+            text-align: right;
+            display: inline-block;
+            width: 150px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="password"],
+        input[type="number"] {
+            padding: 10px;
+            border: 2px solid #004D98;
+            border-radius: 5px;
+            width: 200px;
+            margin: 5px 0;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #A50044;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #004D98;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Formulaire d'inscription</h1>
+
+    <form>
+        <table>
+            <tr>
+                <td><label for="nom">Nom</label></td>
+                <td><input type="text" id="nom" name="nom" required></td>
+            </tr>
+            <tr>
+                <td><label for="prenom">Prénom</label></td>
+                <td><input type="text" id="prenom" name="prenom" required></td>
+            </tr>
+            <tr>
+                <td><label for="date">Date de naissance</label></td>
+                <td><input type="date" id="date" name="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Mot de passe</label></td>
+                <td><input type="password" id="pass" name="pass" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Votre âge</label></td>
+                <td><input type="number" id="age" name="age" min="18" required></td>
+            </tr>
+            <tr>
+                <td><label for="test">Test</label></td>
+                <td><input type="text" id="test" name="test" size="60" placeholder="Tester le champ"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Enregistrer">
+        <input type="reset" value="Effacer">
+    </form>
+
+</body>
+
+</html>

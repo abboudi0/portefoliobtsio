@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Navigation List */
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Espace entre les boutons */
+        }
+
+        /* Navigation Buttons */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007BFF; /* Couleur de fond */
+            color: white; /* Couleur du texte */
+            text-decoration: none; /* Supprime le soulignement */
+            border-radius: 5px; /* Coins arrondis */
+            transition: background-color 0.3s, transform 0.2s; /* Effets de transition */
+            font-size: 18px; /* Taille du texte */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée */
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Couleur au survol */
+            transform: translateY(-2px); /* Légère élévation au survol */
+        }
+
+        .button:active {
+            transform: translateY(1px); /* Légère descente lors du clic */
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav-list">
+        <li><a class="button" href="index.html">Exercice 1</a></li> 
+        <li><a class="button" href="exercice2.html">Exercice 2</a></li>
+    </ul>
+</body>
+</html>
